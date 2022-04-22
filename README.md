@@ -1,6 +1,7 @@
 git init
 git add README.md
 git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/cloudseeder/acme-corp.git
-git push -u origin main
+# Setup SSH keys
+git remote add acme-corp git@github.com:cloudseeder/acme-corp.git
+git remote set-url --push acme-corp git@github.com:cloudseeder/acme-corp.git
+git push -u origin master
