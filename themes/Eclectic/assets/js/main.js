@@ -407,7 +407,7 @@ new Search();
   ///////////////////////////////////////////
   /*{{ if not .Site.IsServer  }}*/
   if ('serviceWorker' in navigator && window.location.pathname !== '/offline') {
-    navigator.serviceWorker.register('../sw.min.js', { scope: '/' });
+    navigator.serviceWorker.register('../sw.min.js', { scope: '../' });
   }
   /*{{ end }}*/
 
