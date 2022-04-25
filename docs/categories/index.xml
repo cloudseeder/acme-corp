@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Acme Corporation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>contact@example.org (Acme Corporation)</managingEditor>
-    <webMaster>contact@example.org (Acme Corporation)</webMaster><atom:link href="https://cloudseeder.github.io/acme-corp/categories/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>contact@example.org (Kevin Brooks)</managingEditor>
+    <webMaster>contact@example.org (Kevin Brooks)</webMaster><atom:link href="https://cloudseeder.github.io/acme-corp/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
