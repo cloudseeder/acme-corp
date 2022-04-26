@@ -98,4 +98,4 @@ Content with a -- (dash) and a --- (long dash).
 
 Sample inline code `a++` can be specified here.
 
-![Alt Text](/image/logo.svg "Optional Tooltip")
+![Alt Text](../image/logo.svg "Optional Tooltip")
