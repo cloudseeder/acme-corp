@@ -36,3 +36,5 @@ A square is a special case of a rhombus (equal sides, opposite equal angles), a 
 * The square is a highly symmetric object. There are four lines of reflectional symmetry and it has rotational symmetry of order 4 (through 90°, 180° and 270°). Its symmetry group is the dihedral group D4.
 
 Content from [wikipedia](https://en.wikipedia.org/wiki/Square)
+
+Kevin Brooks
