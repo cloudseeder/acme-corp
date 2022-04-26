@@ -10,7 +10,7 @@ A cutting tool has one or more sharp cutting edges and is made of a material tha
 
 The rake face which directs the flow of newly formed chip, is oriented at a certain angle is called the rake angle "α". It is measured relative to the plane perpendicular to the work surface. The rake angle can be positive or negative. The flank of the tool provides a clearance between the tool and the newly formed work surface, thus protecting the surface from abrasion, which would degrade the finish. This angle between the work surface and the flank surface is called the relief angle. There are two basic types of cutting tools:
 
-* Single point tool; and
+* Single point tool, and
 * Multiple-cutting-edge tool
 
 A single point tool has one cutting edge and is used for turning, boring and planing. During machining, the point of the tool penetrates below the original work surface of the workpart. The point is sometimes rounded to a certain radius, called the nose radius.
