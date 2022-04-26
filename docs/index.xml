@@ -13,12 +13,12 @@
     
     
     <item>
-<title></title>
+<title>About Us</title>
 <link>https://cloudseeder.github.io/acme-corp/about/</link>
-<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <author>contact@example.org (Kevin Brooks)</author>
       <guid>https://cloudseeder.github.io/acme-corp/about/</guid>
-<description></description>
+<description>World&#39;s leading manufacturer of digital shapes. We shape the world. You live in it.</description>
 <category></category></item>
     
     <item>
@@ -36,6 +36,15 @@
 <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@example.org (Kevin Brooks)</author>
       <guid>https://cloudseeder.github.io/acme-corp/credits/</guid>
+<description></description>
+<category></category></item>
+    
+    <item>
+<title></title>
+<link>https://cloudseeder.github.io/acme-corp/markdown/</link>
+<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contact@example.org (Kevin Brooks)</author>
+      <guid>https://cloudseeder.github.io/acme-corp/markdown/</guid>
 <description></description>
 <category></category></item>
     
