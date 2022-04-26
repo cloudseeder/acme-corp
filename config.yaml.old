@@ -1,7 +1,7 @@
 baseURL: https://cloudseeder.github.io/acme-corp/
 languageCode: en-us 
 title: Acme Corporation 
-theme: Eclectic 
+theme: Universal 
 author: 
   facebook: "https://facebook.com/example" 
   twitter: "https://twitter.com/example" 
