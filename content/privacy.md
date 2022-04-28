@@ -1,4 +1,5 @@
 --- 
+type: modern
 menu: 
   footer: 
     name: Privacy Policy 

@@ -1,3 +1,8 @@
+--- 
+type: modern
+Title: Contact Us
+---
+
 Contact Us
 ----------
 

@@ -1,13 +1,11 @@
-  main:
-    - identifier: about
-      name: About
-      url: /about
-      weight: 100
-    - identifier: contact
-      name: Contact
-      url: /contact
-      weight: 200
-    - identifier: markdown
-      name: Markdown
-      url: /markdown
-      weight: 300
+main:
+  - identifier: contact
+    name: Contact
+    url: /contact
+    weight: 200
+    post: At your service
+  - identifier: markdown
+    name: Markdown
+    url: /markdown
+    weight: 300
+    post: At your service
