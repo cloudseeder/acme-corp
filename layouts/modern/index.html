@@ -12,6 +12,38 @@
     {{ partialCached "menu.html" (dict "Menu" site.Menus.footer) "footer"}}
   </div>
 </section>
+
+{{with (partialCached "products.html" "cache")}}
+<section id="store">
+  <h1>Our Products</h1>
+  <ul>
+    {{range $name, $data := .}}
+    <li>
+      <a href="#">
+        {{$img := resources.GetMatch (print "image/products/" $name ".*") | images.Filter (images.Overlay (resources.GetMatch "image/watermark.*") 0 0 )}}
+
+        <picture>
+          <source srcset="{{($img.Resize " 500x webp").Permalink}}, {{($img.Resize " 1000x webp").Permalink}} 2x" type="image/webp">
+          <img src="{{($img.Resize " 500x").Permalink}}" width="100%" alt="Image"
+            srcset="{{($img.Resize " 1000x").Permalink}} 2x">
+        </picture>
+
+        <!-- {{$img := $img.Resize "1000x"}}
+        <img src="{{$img.Permalink}}" alt="{{$name}}"> -->
+
+        <h2>{{$name}}</h2>
+        <div class="price">$ {{$data.Price}}</div>
+        <div class="rating">
+          {{range (seq $data.Rating)}}&starf;{{end}}
+          {{- range seq (sub 5 ($data.Rating | int))}}&star;{{end}}
+        </div>
+      </a>
+    </li>
+    {{end}}
+  </ul>
+</section>
+{{end}}
+
 {{with resources.GetMatch "products.csv"}}
 <section id="products">
   <h1>Our Products</h1>
@@ -77,7 +109,7 @@
 
 
         <picture>
-          <source srcset="{{(.Resize " 500x webp").Permalink}}, {{(.Resize " 1000x webp").Permalink}} 2x" type="image/webp">
+          <source srcset="{{(.Resize "500x webp").Permalink}}, {{(.Resize " 1000x webp").Permalink}} 2x" type="image/webp">
           <img src="{{(.Resize " 500x").Permalink}}" width="100%" alt="Image"
             srcset="{{(.Resize " 1000x").Permalink}} 2x">
         </picture>

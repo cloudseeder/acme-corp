@@ -1,0 +1,10 @@
+{{ $alt := .Text }}
+{{ with .Title}} title="{{ . }}"{{ end }}
+{{with (.Page.Resources.GetMatch .Destination)}}
+<picture>
+	<source srcset="{{(.Resize "500x webp").Permalink}}, {{(.Resize "1000x webp").Permalink}} 2x" type="image/webp">
+	<img src="{{(.Resize " 500x").Permalink}}" width="100%" 
+	srcset="{{(.Resize " 1000x").Permalink}} 2x" alt={{ $alt }}>
+{{end}}
+</picture>
+

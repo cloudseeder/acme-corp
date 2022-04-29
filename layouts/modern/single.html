@@ -1,1 +1,30 @@
-{{define "bodyClass"}} page {{end}}
+{{define "bodyClass"}} 
+{{ path.Dir .Page.FirstSection.File.Path }} page 
+{{end}}
+{{define "body"}}
+<main>
+  {{$img := .Resources.GetMatch "cover.*"}}
+  {{ if $img }}
+
+  <picture>
+    <source srcset="{{($img.Fill "750x200 bottom webp").Permalink}}, {{($img.Fill "1500x400 bottom webp").Permalink}} 2x" type="image/webp">
+    <img src="{{($img.Fill "750x200").Permalink}}" height="400" width="1920" alt="Image"
+      srcset="{{($img.Fill "1500x400").Permalink}} 2x">
+  </picture>
+
+
+  {{ end }}
+  {{with .Title}}
+    <h1>
+      {{.}}
+    </h1>
+  {{end}}
+  {{if .Param "toc"}}
+    <h2>Table of Contents</h2>
+    {{.TableOfContents}}
+  {{end}}
+  <div class="content">
+    {{.Content}}
+  </div>
+</main>
+{{end}}

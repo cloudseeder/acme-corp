@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="{{$css}}">
     {{$title := default site.Title .Title}}
     {{with $title}}<title>{{.}}</title>{{end}}
+    {{ template "_internal/twitter_cards.html" . }} 
+    {{ template "_internal/opengraph.html" . }} 
   </head>
   <body class="{{block "bodyClass" .}}{{end}}">
     {{block "header" .}}
