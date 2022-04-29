@@ -3,7 +3,7 @@
 {{define "body"}}
 {{$title := default site.Title .Title}}
 <section id="hero">
-  <img class="hero" src="{{partialCached "hero.svg" $ "nothing"}}" alt="Image" style="width: 500px;" />
+  <img class="hero" src="{{partialCached "hero.svg" $ " nothing" }}" alt="Image" style="width: 500px;" />
   <div class="intro">
     {{with $title}}<h1>{{.}}</h1>{{end}}
     {{with .Param "subtitle"}}<h2>{{. | humanize | markdownify}}</h2>{{end}}
@@ -55,6 +55,7 @@
   </ul>
 </section>
 {{end}}
+
 {{with
 (where site.RegularPages
 ".Section" "in" site.Params.mainSections)
@@ -65,6 +66,25 @@
     {{range first 3 .}}
     <li class="post">
       <a href="{{.Permalink}}">
+        {{$title := .Title}}
+        {{with (.Resources.GetMatch "cover.*")}}
+
+        <!-- <picture>
+          <source srcset="./assets/img/about/cover_1x.webp, ./assets/img/about/cover_2x.webp 2x" type="image/webp">
+          <img class="kb_bg_img" src="./assets/img/about/cover_1x.jpg" width="100%" alt="Image"
+            srcset="./assets/img/about/cover_2x.jpg 2x">
+        </picture> -->
+
+
+        <picture>
+          <source srcset="{{(.Resize " 500x webp").Permalink}}, {{(.Resize " 1000x webp").Permalink}} 2x" type="image/webp">
+          <img src="{{(.Resize " 500x").Permalink}}" width="100%" alt="Image"
+            srcset="{{(.Resize " 1000x").Permalink}} 2x">
+        </picture>
+
+        <!-- <img alt="{{$title}}" loading="lazy" src="{{(.Resize " 1000x webp").Permalink}}" /> -->
+
+        {{end}}
         <h2>
           {{.Title}}
         </h2>
@@ -78,6 +98,7 @@
   </ul>
 </section>
 {{end}}
+
 {{with .Param "testimonials"}}
 <section id="testimonials">
   <h1>Customer endorsement</h1>
