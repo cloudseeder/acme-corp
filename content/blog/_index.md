@@ -5,10 +5,8 @@ menu:
     identifier: blog
     weight: 110
     post: Our favorite muse
-  footer:
-    name: Blog
-    weight: 100
 ---
+
 The Acme Blog
 ============
 
