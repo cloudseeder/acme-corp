@@ -1,0 +1,10 @@
+#!/bin/bash
+
+hugo -D -d docs
+git status
+echo "Use ^c to exit before the commit"
+echo "sleeping 15 seconds"
+sleep 15
+git add --all
+git commit -a -m "new website files"
+git push acme-corp master
