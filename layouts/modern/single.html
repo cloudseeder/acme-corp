@@ -7,9 +7,9 @@
   {{ if $img }}
 
   <picture>
-    <source srcset="{{($img.Fill "750x500 smart webp").Permalink}}, {{($img.Fill "1500x1000 middle webp").Permalink}} 2x" type="image/webp">
-    <img src="{{($img.Fill "750x200").Permalink}}" height="1000" width="1500" alt="Image"
-      srcset="{{($img.Fill "1500x400").Permalink}} 2x">
+    <source srcset="{{($img.Fill "1500x500 smart webp").Permalink}}, {{($img.Fill "3000x1000 smart webp").Permalink}} 2x" type="image/webp">
+    <img src="{{($img.Fill "1500x500").Permalink}}" height="1000" width="1500" alt="Image"
+      srcset="{{($img.Fill "3000x1000").Permalink}} 2x">
   </picture>
 
 

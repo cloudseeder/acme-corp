@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf ./docs
 hugo -D -d docs
 git status
 echo "Use ^c to exit before the commit"
