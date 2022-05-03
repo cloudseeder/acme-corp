@@ -1,0 +1,18 @@
+{{with (.Page.Resources.GetMatch .Destination)}}
+<picture>
+	<source srcset="{{(.Resize "500x webp").Permalink}}, {{(.Resize "1000x webp").Permalink}} 2x" type="image/webp">
+{{end}}
+
+<img loading="lazy" src="
+{{with (.Page.Resources.GetMatch .Destination)}}
+	{{(.Resize "500x").Permalink}}
+{{else}}
+	{{ .Destination | safeURL }}
+	srcset={{(.Resize "1000x").Permalink}}
+{{end}}
+"
+alt="{{ .Text }}" 
+{{ with .Title}} title="{{ . }}"{{ end }}
+/>
+</picture>
+

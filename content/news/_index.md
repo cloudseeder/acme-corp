@@ -5,9 +5,8 @@ menu:
     identifier: news
     weight: 120
     post: The good stuff
-cascade:
+cascade: 
   type: modern
-type: _default
 ---
 ![News](news.png){style="text-align:center"}
 -----------------

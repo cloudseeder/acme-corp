@@ -4,7 +4,16 @@ menu:
     name: Blog
     identifier: blog
     weight: 110
-    post: Our favorite muse
+    post: Our favorite muse 
+cascade:
+- _target:
+    kind: page
+  layout: blog
+  type: modern
+- _target:
+    kind: section
+  type: modern
+  layout: list
 ---
 
 The Acme Blog
