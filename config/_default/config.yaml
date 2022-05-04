@@ -2,7 +2,7 @@ baseURL: https://cloudseeder.github.io/acme-corp/
 languageCode: en-us
 title: The Acme Corporation
 theme: github.com/hugoinaction/Eclectic
-theme: AcmeTheme
+theme: github.com/cloudseeder/hugothemeone
 enableEmoji: true
 enableGitInfo: true
 Paginate: 3
