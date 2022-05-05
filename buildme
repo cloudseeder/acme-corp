@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Add code from template repo buildmeaversion script to ask for a specific version of the template
+# hugo mod get github.com/cloudseeder/hugothemeone@v9.0.0
+
 rm -rf ./docs
 hugo -D -d docs
 git status
@@ -7,5 +10,5 @@ echo "Use ^c to exit before the commit"
 echo "sleeping 15 seconds"
 sleep 15
 git add --all
-git commit -a -m "new website files"
+git commit -a -m "new version of the website"
 git push acme-corp master

@@ -14,3 +14,10 @@ main:
     url: /markdown
     weight: 300
     post: At your service
+footer: 
+  - name: Privacy Policy 
+    weight: 300 
+    url: /privacy 
+  - name: Terms of Use 
+    weight: 200 
+    url: /terms
