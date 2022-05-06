@@ -1,5 +1,5 @@
 ---
-title: Random sex questions from Kevinn
+title: Random sex questions from Kevin
 survey:
 - question: Do you like it fast?
   answer: ["Yes", "No"]
